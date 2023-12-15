@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.SoapXMLRequest">
+      <class name="com.openapi.test.Amenities">
         <methods>
-          <include name="validateSoapXML"/>
+          <include name="getAmenites"/>
         </methods>
-      </class> <!-- tests.SoapXMLRequest -->
+      </class> <!-- com.openapi.test.Amenities -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

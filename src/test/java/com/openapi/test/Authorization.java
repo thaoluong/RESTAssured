@@ -27,8 +27,10 @@ public class Authorization {
 								post("/v1/auth/token/create");
 
 		Assert.assertEquals(response.statusCode(), 201);
-//		response.prettyPrint();
 		accessToken = response.body().jsonPath().getString("data.accessToken");
-//		System.out.println(accessToken);
+		System.out.println(request);
+		System.out.println(accessToken);
+//		response.prettyPrint();
+
 	}
 }

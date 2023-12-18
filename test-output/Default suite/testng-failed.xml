@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.openapi.test.Amenities">
+      <class name="Lesson.Hamcrest_Assert_On_Extracted_Response">
         <methods>
-          <include name="getAmenites"/>
+          <include name="ExtractReponse4"/>
         </methods>
-      </class> <!-- com.openapi.test.Amenities -->
+      </class> <!-- Lesson.Hamcrest_Assert_On_Extracted_Response -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

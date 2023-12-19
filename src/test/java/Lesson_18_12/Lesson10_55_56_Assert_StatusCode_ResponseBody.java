@@ -1,4 +1,4 @@
-package Lesson;
+package Lesson_18_12;
 
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;

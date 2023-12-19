@@ -1,26 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-18T14:38:42 ICT" name="Default suite" finished-at="2023-12-18T14:38:45 ICT" duration-ms="3473">
+  <suite started-at="2023-12-19T17:20:08 ICT" name="Default suite" finished-at="2023-12-19T17:20:23 ICT" duration-ms="14990">
     <groups>
     </groups>
-    <test started-at="2023-12-18T14:38:42 ICT" name="Default test" finished-at="2023-12-18T14:38:45 ICT" duration-ms="3473">
-      <class name="Lesson.Hamcrest_Assert_On_Extracted_Response">
-        <test-method signature="ExtractReponse4()[pri:0, instance:Lesson.Hamcrest_Assert_On_Extracted_Response@4b14c583]" started-at="2023-12-18T14:38:42 ICT" name="ExtractReponse4" finished-at="2023-12-18T14:38:45 ICT" duration-ms="3441" status="FAIL">
+    <test started-at="2023-12-19T17:20:08 ICT" name="Default test" finished-at="2023-12-19T17:20:23 ICT" duration-ms="14990">
+      <class name="Lesson_19_12.Hamcrest_Part1">
+        <test-method signature="Hamcrest_AllOf_AnyOf()[pri:0, instance:Lesson_19_12.Hamcrest_Part1@4690b489]" started-at="2023-12-19T17:20:08 ICT" name="Hamcrest_AllOf_AnyOf" finished-at="2023-12-19T17:20:12 ICT" duration-ms="4344" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[
-Expected: "My Workspace1"
-     but: was "My Workspace"]]>
+              <![CDATA[1 expectation failed.
+JSON path workspaces[0].name doesn't match.
+Expected: (a string starting with "My1" or a string containing "Workspace1")
+  Actual: My Workspace
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-Expected: "My Workspace1"
-     but: was "My Workspace"
-at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-at Lesson.Hamcrest_Assert_On_Extracted_Response.ExtractReponse4(Hamcrest_Assert_On_Extracted_Response.java:23)
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path workspaces[0].name doesn't match.
+Expected: (a string starting with "My1" or a string containing "Workspace1")
+  Actual: My Workspace
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+at Lesson_19_12.Hamcrest_Part1.Hamcrest_AllOf_AnyOf(Hamcrest_Part1.java:133)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -52,8 +81,32 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ExtractReponse4 -->
-      </class> <!-- Lesson.Hamcrest_Assert_On_Extracted_Response -->
+        </test-method> <!-- Hamcrest_AllOf_AnyOf -->
+        <test-method signature="Hamcrest_Assert()[pri:0, instance:Lesson_19_12.Hamcrest_Part1@4690b489]" started-at="2023-12-19T17:20:12 ICT" name="Hamcrest_Assert" finished-at="2023-12-19T17:20:14 ICT" duration-ms="1793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Hamcrest_Assert -->
+        <test-method signature="Hamcrest_ContainInAnyOrder()[pri:0, instance:Lesson_19_12.Hamcrest_Part1@4690b489]" started-at="2023-12-19T17:20:14 ICT" name="Hamcrest_ContainInAnyOrder" finished-at="2023-12-19T17:20:16 ICT" duration-ms="1663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Hamcrest_ContainInAnyOrder -->
+        <test-method signature="Hamcrest_Contains_Method()[pri:0, instance:Lesson_19_12.Hamcrest_Part1@4690b489]" started-at="2023-12-19T17:20:16 ICT" name="Hamcrest_Contains_Method" finished-at="2023-12-19T17:20:17 ICT" duration-ms="1725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Hamcrest_Contains_Method -->
+        <test-method signature="Hamcrest_HasSize()[pri:0, instance:Lesson_19_12.Hamcrest_Part1@4690b489]" started-at="2023-12-19T17:20:17 ICT" name="Hamcrest_HasSize" finished-at="2023-12-19T17:20:19 ICT" duration-ms="1794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Hamcrest_HasSize -->
+        <test-method signature="Hamcrest_IsNotEmpty()[pri:0, instance:Lesson_19_12.Hamcrest_Part1@4690b489]" started-at="2023-12-19T17:20:19 ICT" name="Hamcrest_IsNotEmpty" finished-at="2023-12-19T17:20:21 ICT" duration-ms="1907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Hamcrest_IsNotEmpty -->
+        <test-method signature="Hamcrest_matching()[pri:0, instance:Lesson_19_12.Hamcrest_Part1@4690b489]" started-at="2023-12-19T17:20:21 ICT" name="Hamcrest_matching" finished-at="2023-12-19T17:20:23 ICT" duration-ms="1725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Hamcrest_matching -->
+      </class> <!-- Lesson_19_12.Hamcrest_Part1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

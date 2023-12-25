@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Lesson_19_12.Hamcrest_Part1">
+      <class name="Lesson20_12.RequestResponse_Logging11_65">
         <methods>
-          <include name="Hamcrest_AllOf_AnyOf"/>
+          <include name="Logging_BackList_Header"/>
         </methods>
-      </class> <!-- Lesson_19_12.Hamcrest_Part1 -->
+      </class> <!-- Lesson20_12.RequestResponse_Logging11_65 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
